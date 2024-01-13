@@ -48,7 +48,7 @@ VALUES (1,1),(1,2),(1,3),(2,3),(2,4),(2,5),(3,1),(3,3),(4,2),(4,5),(4,1),(5,2),(
 -- Conferindo A Inserção Dos Dados --
 SELECT * FROM pessoas_computadores;
 
--- Conferindo,Juntando E Ordenando As Tabelas --
+-- Conferindo E Juntando As Tabelas --
 SELECT p.id as IDP, p.nome as Nome, p.cpf as CPF, c.id as IDC, c.marca as Marca, c.modelo as Modelo, pc.computadores_id as IDPC, pc.pessoas_id as IDPP
 FROM pessoas p, computadores c, pessoas_computadores pc
 WHERE p.id = pc.pessoas_id and c.id = pc.computadores_id;
